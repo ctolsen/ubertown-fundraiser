@@ -10,6 +10,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <script src="app.js"></script>
+
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
@@ -21,19 +23,19 @@
         <div class="container top-menu-container">
           <div class="top-menu inner">
             <ul>
-              <li><a href="#home" title="Home">
+              <li><a data-scroll href="#home" title="Home">
                 <img src="images/home.png">
               </a></li>
-              <li><a href="#video" title="Video">
+              <li><a data-scroll href="#video" title="Video">
                 <img src="images/video.png">
               </a></li>
-              <li><a href="#intro" title="Intro">
+              <li><a data-scroll href="#intro" title="Intro">
                 <img src="images/intro.png">
               </a></li>
-              <li><a href="#rewards" title="Rewards">
+              <li><a data-scroll href="#rewards" title="Rewards">
                 <img src="images/rewards-top.png">
               </a></li>
-              <li><a href="#costs" title="Costs And Safety">
+              <li><a data-scroll href="#costs" title="Costs And Safety">
                 <img src="images/costs-and-safety.png">
               </a></li>
             </ul>
@@ -44,7 +46,7 @@
         </div>
 
         <div class="container hero">
-          <a class="anchor" name="home"></a>
+          <a class="anchor" id="home" name="home"></a>
           <div class="inner hero-inner">
 
           </div>
@@ -52,7 +54,7 @@
 
         <div class="container">
           <div class="video inner">
-            <a class="anchor" name="video"></a>
+            <a class="anchor" id="video" name="video"></a>
             <div class="video-wrapper">
               <iframe src="http://player.vimeo.com/video/22439234" width="581" height="327" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
               </iframe>
@@ -69,7 +71,7 @@
 
         <div class="container">
           <div class="know-more inner">
-            <a class="anchor" name="intro"></a>
+            <a class="anchor" id="intro" name="intro"></a>
             <div class="header-image">
               <img src="images/know-more.png" alt="Want to know more?">
             </div>
@@ -140,7 +142,7 @@
 
         <div class="container">
           <div class="rewards inner">
-            <a class="anchor" name="rewards"></a>
+            <a class="anchor" id="rewards" name="rewards"></a>
             <div class="header-image">
               <img src="images/rewards-header.png" alt="Rewards">
             </div>
@@ -175,7 +177,7 @@
 
         <div class="container">
           <div class="costs-safety inner">
-            <a class="anchor" name="costs"></a>
+            <a class="anchor" id="costs" name="costs"></a>
 
             <div class="left-col">
               <img src="images/uber.jpg">
@@ -231,4 +233,10 @@
         </div>
 
      </body>
+     <script>
+       smoothScroll.init({
+         speed: 750,
+         easing: 'easeInOutCubic'
+       });
+     </script>
 </html>
