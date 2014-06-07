@@ -105,6 +105,11 @@ body {
   font-size: 15px;
 }
 
+.anchor {
+  top: -66px;
+  position: absolute;
+}
+
 .container {
   margin: 0 auto;
 }
@@ -128,6 +133,7 @@ body {
   width: 962px;
   margin: 0 auto;
   box-sizing: border-box;
+  position: relative;
 }
 
 p {
@@ -150,6 +156,11 @@ p.last {
 
 .top-menu-container {
   background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
 }
 
 .top-menu {
@@ -188,6 +199,7 @@ p.last {
 }
 
 .hero {
+  margin-top: 66px;
   height: 327px;
   background-image: url(../images/top-banner.jpg);
   background-position: top center;
