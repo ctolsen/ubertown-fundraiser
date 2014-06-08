@@ -256,13 +256,19 @@ p.last {
 }
 
 .rewards .left-col {
-  margin-top: 36px;
+  margin-top: 50px;
   width: 498px;
   float: left;
 }
 
+.rewards .left-col p {
+  margin-left: 30px;
+  width: 80%;
+  margin-bottom: 47px;
+}
+
 .rewards .right-col {
-  margin-top: 66px;
+  margin-top: 0px;
   float: right;
   width: 444px;
 }
