@@ -139,6 +139,12 @@ em {
   color: rgb(255, 108, 0);
 }
 
+a {
+  font-weight: bold;
+  font-style: normal;
+  color: rgb(255, 108, 0);
+}
+
 p.last {
   font-size: 17px;
 }
@@ -176,6 +182,9 @@ p.last {
 .top-menu .paypal-image {
   float: right;
   margin-right: 8px;
+  position: absolute;
+  top: 12px;
+  right: 0;
 }
 
 .chevrons {
@@ -253,11 +262,15 @@ p.last {
 .rewards .left-col p {
   margin-left: 30px;
   width: 80%;
+  margin-bottom: 1px;
+}
+
+.rewards .left-col p:last-of-type {
   margin-bottom: 47px;
 }
 
 .rewards .right-col {
-  margin-top: 0px;
+  margin-top: 50px;
   float: right;
   width: 444px;
 }
@@ -291,7 +304,7 @@ p.last {
   margin-top: 50px;
 }
 
-.costs-safety .paypal-header a {
+.costs-safety .paypal-header form {
   margin-left: 0px;
   margin-top: 28px;
   display: block;
@@ -320,8 +333,15 @@ p.last {
   display: inline;
 }
 
-.paypal-header a {
+.paypal-header form {
   margin-left: 25px;
+  display: inline;
+  position: relative;
+}
+
+.paypal-header form input[type=image] {
+  position: absolute;
+  top: -7px;
 }
 
 
